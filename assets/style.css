@@ -1,260 +1,288 @@
-*{
+    *{
 
-  font-family: MuseoModerno, Arial, Helvetica, sans-serif;  
-  font: bold;
-  color:  white;
-}
-
-body{
-   background-color: rgb(18, 18, 46);
-
-}
-
-.header{
-    display: flex;
-    align-items: center;
-    width: 95%;
-    justify-content:space-between;
-   
-}
-
-.header:first-child{
-    margin-left: 30px;
-}
-
-
-.header a:hover{
-    text-decoration: overline;
-
-}
-
-.header nav{
-    display: flex;
-    gap: 20px;
-}
-
-a{
-    display: flex;
-    align-items: center;
-    color: white;
-    text-align: right;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: white;
-    text-transform:uppercase;
-}
-
-img{
-    display: flex;
-    justify-content: center;
-    width: 50px;
-    border-radius: 50px;
-}
-
-.hero{
-    position: relative;
-    height: 50vh;
-    background: url(./images/imagen_casa_inteligente_hero.webp);
-    background-size:contain;
-    background-repeat: round;
-    border-radius: 10px 10px 10px 10px
-}
-
-.hero-title{
+    font-family: MuseoModerno, Arial, Helvetica, sans-serif;  
+    font: bold;
     color:  white;
-    word-wrap:break-word;
-    font-size: 50px;
-    margin-left: 35%;
-    margin-bottom: 0%;
-}
+    }
 
-.hero-title2{
-    color:  white;
-    word-wrap:break-word;
-    font-size: 50px;
-    margin-left: 55%;
-    margin-top: -3%;
-}
+    body{
+        background-color: rgb(18, 18, 46);
+        padding: 1%; 
 
-.hero-subtitle{
-    width: 500px;
-    color:  white;
-    margin-right: 15%;
-    margin-left: 55%;
-    border-radius: 20px;
-    background-color: rgb(11, 11, 122);
-    padding-left: 2%;
-    padding-right: 2%;
-}
+    }
 
-.form_contacto{
-    align-items: flex-start;
-    border-radius: 20px;
-    font-size: 20px;
-    font-style: italic;
-    margin-left: 63%;
-}
+    .header{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        justify-content:space-between;
+    }
 
-.form_contacto button{
-    border-radius: 20px;
-    height: 35px;
-    padding: 5px, 150px;
+    .header:first-child{
+        margin-left: 30px;
+    }
+    .header a:hover{
+        text-decoration: overline;
+    }
+    .header nav{
+        display: flex;
+        gap: 20px;
+    }
 
-}
-.contacto{
-    border-radius: 20px;
-    width: 300px;
-    height: 30px;
+    a{
+        display: flex;
+        align-items: center;
+        color: white;
+        text-align: right;
+        text-decoration: none;
+    }
 
-}
+    nav a:hover{
+        color: white;
+        text-transform:uppercase;
+    }
 
-.secciontarjetas{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    border-bottom: solid 1px;
-    padding-bottom: 100px;
-    border-top: solid 1px;
-}
+    img{
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        border-radius: 50px;
+    }
 
-.secciontarjetas h1, p{
-    text-align: center;
-}
+    .hero{
+        height: 600px;
+        background: url(./images/imagen_casa_inteligente_hero.webp);
+        background-size:cover;
+        background-repeat:round;
+        border-radius: 30px 30px 30px 30px;
+    }
 
-.grupo-tarjetas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
+    .hero h1{
+        margin: 0px;
+    }
 
-.tarjeta{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    height: 400px;
-    width: 300px;
-    /*border: solid 1px;*/
-    border-radius: 10px;
-    cursor: pointer;
-    transform: translateX(-50px) ;
-    transition: 0.5s;
-}
+    .hero .hero-title{
+        position: relative;
+        left: 30%;
+        color:  white;
+        word-wrap:break-word;
+        font-size: 50px;
+    }
 
-.tarjeta .tarjeta2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    height: 400px;
-    width: 300px;
-    /*border: solid 1px;*/
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
+   .hero .hero-title2{
+        position: relative;
+        top: 15%;
+        left: 45%;
+        color:  white;
+        word-wrap:break-word;
+        font-size: 50px;
+    }
 
-.tarjeta3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    border-radius: 50px;
-    transform: translateY(-300px) ;
-    opacity: 0;
-    transition: 0.5s;
-    text-align: justify;
-    width: 250px;
-    min-height: 270px;
-    padding: 5px 5px;
-    border: 10px 10px;
-}
+    .hero .hero-subtitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top:200px;
+        left: 40%;
+        width:600px;
+        text-align: left;
+        padding: 0px 20px;
+        color:  white;
+        border-radius: 40px;
+        background-color: rgb(34, 34, 124);
+    }
 
-.tarjeta:hover .tarjeta2{
-    /*transform: translateX(-310px) ;*/
-    transition: 0.5s;
-    opacity: 0;
-    
-}
-.tarjeta:hover .tarjeta3{
-/*    transform: translateX(400px) ;
-    transform: translateY(-300px) ;*/
-    transition: 0.5s;
-    opacity: 1;
-}
+    .her .hero-subtitle p{
+        border-radius: 20px;
+        border-color: aliceblue;
+    }
 
-.tarjeta .tarjeta3 img{
-    align-self: center;
-    width: 100px;    
-    height: 100px; 
-    transition: 0.5s;
-    opacity: 1;
-    
-}
+    .her .hero-subtitle a{
+        border: solid 200px;
+        border-radius: 20px;
+        border-color: rgb(247, 247, 247);
+        
+    }
 
-.tarjeta img{
-    height: 400px;
-    width: 300px;
-}
+    .form_contacto{
+        align-items: flex-start;
+        border-radius: 20px;
+        font-size: 20px;
+        font-style: italic;
+        margin-left: 63%;
+    }
 
-.tarjeta h1{
-    text-decoration: underline;
-    
-}
+    .form_contacto button{
+        border-radius: 20px;
+        height: 35px;
+        padding: 5px, 150px;
 
-.footer{
-    display: flex;
-    flex-direction: row ;
-    justify-content:space-around;
-    gap: 10px;
-    margin-right: 200PX;
-}
+    }
+    .contacto{
+        border-radius: 20px;
+        width: 300px;
+        height: 30px;
 
-.footer div img{
-    height: 90px;
-    width: 90px;
-    margin: 0px 0px;
-}
+    }
 
-.footer div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .grupo-tarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
 
-.footer .f_lista{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .secciontarjetas{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        border-bottom: solid 1px;
+        padding-bottom: 100px;
+        border-top: solid 1px;
+    }
 
-.f_lista a:hover{
-    text-decoration: overline;
-}
+    .secciontarjetas h1, p{
+        text-align: center;
+    }
 
-h1 h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
 
-}
 
-.tarjeta3 a{
-    background-color: black;
-    border: solid 1px;
-    border-radius: 30px;
-    align-self: center;
-    text-align: center;
-    padding: 5px;
-}
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+        /*border: solid 1px;*/
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
 
-.tarjeta3 h2{
-    text-align: center;
-}
+    .tarjeta .tarjeta2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        height: 400px;
+        width: 300px;
+        /*border: solid 1px;*/
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .tarjeta3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        border-radius: 50px;
+        border: solid;
+        transform: translateY(-364px) ;
+        opacity: 0;
+        transition: 0.5s;
+        text-align: justify;
+        padding: 5px 5px;
+        border: 10px 10px;
+    }
+
+    .tarjeta:hover .tarjeta2{
+        /*transform: translateX(-310px) ;*/
+        height: 400px;
+        width: 300px;
+        transition: 1s;
+        opacity: 0;
+        
+    }
+    .tarjeta:hover .tarjeta3{
+        /*transform: translateY(-400px) ;*/
+        height: 400px;
+        width: 300px;
+        transition: 1s;
+        opacity: 1;
+    }
+
+    .tarjeta .tarjeta3 img{
+        align-self: center;
+        width: 100px;    
+        height: 100px; 
+    }
+
+    .tarjeta img{
+        height: 400px;
+        width: 300px;
+    }
+
+    .tarjeta h1{
+        text-decoration: underline;
+        
+    }
+
+    .textos_footer h1{
+        text-align: center;
+        padding: 25px 50px;
+
+    }
+
+    .textos_footer p{
+        text-align: center;
+        padding: 50px 50px;
+        
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row ;
+        justify-content:space-around;
+        gap: 10px;
+        margin-right: 200PX;
+    }
+
+    .footer div img{
+        height: 90px;
+        width: 90px;
+        margin: 0px 0px;
+    }
+
+    .footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .f_lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+
+    .f_lista a:hover{
+        text-decoration: overline;
+    }
+
+    h1 h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .tarjeta3 a{
+        background-color: black;
+        border: solid 1px;
+        border-radius: 30px;
+        align-self: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .tarjeta3 h2{
+        text-align: center;
+    }
 
 
