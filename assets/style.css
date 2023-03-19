@@ -15,13 +15,16 @@
         align-items: center;
         justify-content:space-between;
         margin-bottom: 20px;
-
     }
 
-    .header:first-child{
+    .header .menu-nav:first-child{
         margin-left: 30px;
     }
-    .header a:hover{
+    .header .menu-inicio{
+        margin-right: 30px;    
+    }
+
+    .header .menu-nav a :hover{
         text-decoration: overline;
     }
     .header nav{
@@ -150,8 +153,9 @@
         margin: 50px;
         padding-bottom: 100px;
         padding-top: 50px;
-        border-bottom: solid 2px;
+        border-bottom: solid 1px;
         border-top: solid 1px;
+        text-align: justify;
     }
 
     .secciontarjetas h1, p{
@@ -166,6 +170,11 @@
         gap: 40px;
     }
 
+    .grupo-tarjetas p{
+        text-align: justify;
+        margin: 10px 10px;
+    }
+
     .tarjeta{
         display: flex;
         flex-direction: column;
@@ -176,15 +185,17 @@
         transition: 1s;
     }
 
-    .tarjeta .tarjeta2{
+    .tarjeta2{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         height: 400px;
         width: 300px;
         border-radius: 10px;
         cursor: pointer;
         transition: 1s;
+        border: 10px 10px;
     }
 
     .tarjeta3{
@@ -194,25 +205,22 @@
         justify-items: center;
         border-radius: 50px;
         border: solid;
-        transform: translateY(-364px) ;
+        transform: translateY(-380px);
         opacity: 0;
         transition: 0.5s;
         text-align: justify;
-        padding: 5px 5px;
         border: 10px 10px;
     }
 
     .tarjeta:hover .tarjeta2{
-        /*transform: translateX(-310px) ;*/
         height: 400px;
         width: 300px;
-        transition: 1s;
+        transition: 0.5s;
         opacity: 0;
         
     }
     .tarjeta:hover .tarjeta3{
-        /*transform: translateY(-400px) ;*/
-        height: 400px;
+        height: 500px;
         width: 300px;
         transition: 1s;
         opacity: 1;
@@ -234,6 +242,21 @@
         
     }
 
+    .seccionVideo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        border-top: solid 1px;
+        padding-top: 50px;
+    }
+
+    .seccionVideo video{
+        padding-top: 20px;
+        border-radius: 30px;
+    }
+
     .textos_footer h1{
         text-align: center;
         padding: 25px 50px;
@@ -243,7 +266,6 @@
     .textos_footer p{
         text-align: center;
         padding: 50px 50px;
-        
     }
 
     .footer{
@@ -251,7 +273,6 @@
         flex-direction: row ;
         justify-content:space-around;
         gap: 10px;
-        margin-right: 200PX;
     }
 
     .footer div img{
@@ -270,7 +291,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        
+
     }
 
     .f_lista a:hover{
